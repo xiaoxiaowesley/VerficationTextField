@@ -5,10 +5,14 @@ VerficationTextField for iOS under iOS 15
 
 
 In a mobile phone verification code input, you need to switch to the next input field automatically after entering a digit. In SwiftUI, achieving this requires switching focus (becomeFirstResponder) among multiple Textfields to accomplish the functionality.
+
 In iOS 15, this can be implemented using the focused
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-make-a-textfield-or-texteditor-have-default-focus
+
 However, for iOS versions below 15, TextField does not support @FocusState, so an alternative approach is needed.
+
 This VerficationTextField component integrates UITextField into SwiftUI through UIViewRepresentable.
+
 It manages a single character input field and implements focus control as well as triggering actions on text changes and deletions. This article uses UIViewRepresentable to encapsulate UIKit and implement the focus switching functionality for Textfield types:
 
 - Automatically switch focus to the next Textfield after entering a digit
