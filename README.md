@@ -10,8 +10,10 @@ https://www.hackingwithswift.com/quick-start/swiftui/how-to-make-a-textfield-or-
 However, for iOS versions below 15, TextField does not support @FocusState, so an alternative approach is needed.
 This VerficationTextField component integrates UITextField into SwiftUI through UIViewRepresentable.
 It manages a single character input field and implements focus control as well as triggering actions on text changes and deletions. This article uses UIViewRepresentable to encapsulate UIKit and implement the focus switching functionality for Textfield types:
-● Automatically switch focus to the next Textfield after entering a digit
-● Automatically switch to the previous Textfield when the delete key is pressed
+
+- Automatically switch focus to the next Textfield after entering a digit
+
+- Automatically switch to the previous Textfield when the delete key is pressed
 
 ```
 struct VerficationTextField: UIViewRepresentable {
