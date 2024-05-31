@@ -12,7 +12,7 @@ struct VerficationCodeView: View {
     @State private var isFirstResponders: [Bool] = [true, false, false, false, false, false]
 
     func changeFirstResponder(_ idx: Int) {
-        for i in 0..<isFirstResp1234onders.count {
+        for i in 0..<isFirstResponders.count {
             if i != idx {
                 isFirstResponders[i] = false
             } else {
